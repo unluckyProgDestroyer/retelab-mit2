@@ -9,7 +9,7 @@ public class TrainControllerImpl implements TrainController {
 	private int speedLimit = 0;
 	private int maxSpeedLimit = 120;
 
-	public static version = 0;
+	public static int version = 1;
 
 	@Override
 	public void followSpeed() {

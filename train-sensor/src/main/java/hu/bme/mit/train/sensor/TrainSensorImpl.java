@@ -11,8 +11,6 @@ public class TrainSensorImpl implements TrainSensor {
 	private int speedLimit = 5;
 	private int s;
 
-	public static version = 1.0;
-
 	public TrainSensorImpl(TrainController controller, TrainUser user) {
 		this.controller = controller;
 		this.user = user;
