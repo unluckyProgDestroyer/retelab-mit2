@@ -30,6 +30,11 @@ public class TrainControllerImpl implements TrainController {
 	}
 
 	@Override
+	public int getSpeedLimit() {
+		return speedLimit;
+	}
+
+	@Override
 	public void setSpeedLimit(int speedLimit) {
 		if(speedLimit>maxSpeedLimit) speedLimit = maxSpeedLimit;
 		this.speedLimit = speedLimit;
