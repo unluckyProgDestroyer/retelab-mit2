@@ -50,5 +50,15 @@ public class TrainSystemTest {
 		Assert.assertEquals(0, controller.getReferenceSpeed());
 	}
 
+	@Test
+	public void OverrideSpeedLimit(){
+		controller.setSpeedLimit(110);
+		Assert.assertEquals(110, controller.getSpeedLimit());
+		controller.setSpeedLimit(120);
+		Assert.assertEquals(120, controller.getSpeedLimit());
+		controller.setSpeedLimit(130);
+		Assert.assertEquals(120, controller.getSpeedLimit());
+	}
+
 	
 }
